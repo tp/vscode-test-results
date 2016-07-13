@@ -1,0 +1,14 @@
+{
+  "name": "vscode-test-results-server",
+  "version": "0.1.0",
+  "description": "",
+  "main": "_compiled/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Timm Preetz <timm@preetz.us>",
+  "license": "MIT",
+  "dependencies": {
+    "vscode-languageserver": "^2.2.1"
+  }
+}
