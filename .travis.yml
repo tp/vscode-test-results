@@ -1,11 +1,13 @@
 language: node_js
 node_js:
   - "6.1"
+
 install:
   - cd $TRAVIS_BUILD_DIR/server
   - npm install
   - cd $TRAVIS_BUILD_DIR/client
   - npm install
+
 script:
   - cd $TRAVIS_BUILD_DIR/server
   - npm install
