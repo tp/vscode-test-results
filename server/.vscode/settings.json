@@ -1,0 +1,10 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "typescript.tsdk": "node_modules/typescript/lib/",
+  "eslint.enable": false,
+  "files.exclude": {
+    "_compiled/": true,
+    ".vscode/": false,
+    "node_modules/": true
+  }
+}

@@ -2,13 +2,21 @@
   "name": "vscode-test-results-server",
   "version": "0.1.0",
   "description": "",
-  "main": "_compiled/index.js",
+  "engines": {
+    "node": "6.x"
+  },
+  "main": "src/server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc -p .",
+    "watch": "installServerIntoExtension ../client ./package.json ./tsconfig.json && tsc --watch -p ."
   },
   "author": "Timm Preetz <timm@preetz.us>",
   "license": "MIT",
   "dependencies": {
     "vscode-languageserver": "^2.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.0-dev.20160711"
   }
 }

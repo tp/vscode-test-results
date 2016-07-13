@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "declaration": true,
+    "inlineSourceMap": false,
+    "lib": ["es2016"],
+    "module": "commonjs",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "outDir": "../client/server",
+    "rootDir": ".",
+    "sourceMap": true,
+    "strictNullChecks": false,
+    "target": "es5",
+    "traceResolution": false
+  },
+  "exclude": [
+    "_compiled",
+    "node_modules"
+  ],
+  "filesGlob": [
+    "src/**/*"
+  ]
+}

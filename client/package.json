@@ -2,13 +2,27 @@
   "name": "vscode-test-results-client",
   "version": "0.1.0",
   "description": "",
-  "main": "_compiled/index.js",
+  "main": "_compiled/src/extension.js",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "author": "Timm Preetz <timm@preetz.us>",
+  "publisher": "Timm Preetz <timm@preetz.us>",
   "license": "MIT",
   "dependencies": {
-    "vscode-languageclient": "^2.3.0"
-  }
+    "vscode-languageclient": "^2.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.0-dev.20160711",
+    "vscode": "^0.11.14"
+  },
+  "activationEvents": [
+    "onLanguage:plaintext"
+  ]
 }
